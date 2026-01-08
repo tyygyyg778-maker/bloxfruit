@@ -3835,7 +3835,7 @@ local l_ScreenGui_0 = Instance.new("ScreenGui");
 l_ScreenGui_0.Name = "ControlGUI";
 l_ScreenGui_0.Parent = game.CoreGui;
 local l_ImageButton_0 = Instance.new("ImageButton");
-l_ImageButton_0.Size = UDim2.new(0, 70, 0, 70);
+l_ImageButton_0.Size = UDim2.new(0, 60, 0, 60);
 l_ImageButton_0.Position = UDim2.new(0.15, 0, 0.15, 0);
 l_ImageButton_0.Image = "rbxassetid://96977589578872";
 l_ImageButton_0.BackgroundTransparency = 1;
@@ -3890,54 +3890,54 @@ l_ImageButton_0.MouseButton1Click:Connect(function() --[[ Line: 0 ]] --[[ Name: 
 end);
 local v520 = v505:MakeTab({
     "Farming", 
-    "home"
+    "rbxassetid://95855416434306"
 });
 local v521 = v505:MakeTab({
     "Auto Fishing", 
-    "rbxassetid://"
+    "rbxassetid://95855416434306"
 });
 local v522 = v505:MakeTab({
     "Quest | Items", 
-    "swords"
+    "rbxassetid://95855416434306"
 });
 local v523 = v505:MakeTab({
     "Volcano Dojo", 
-    "cake"
+    "rbxassetid://95855416434306"
 });
 local v524 = v505:MakeTab({
     "Sea Event", 
-    "waves"
+    "rbxassetid://95855416434306"
 });
 local v525 = v505:MakeTab({
     "Race V4", 
-    "crown"
+    "rbxassetid://95855416434306"
 });
 local v526 = v505:MakeTab({
     "Raid Fruits", 
-    "cherry"
+    "rbxassetid://95855416434306"
 });
 local v527 = v505:MakeTab({
     "Fruits | Check Stock", 
-    "apple"
+    "rbxassetid://95855416434306"
 });
 local v528 = v505:MakeTab({
     "Teleport", 
-    "locate"
+    "rbxassetid://95855416434306"
 });
 local v529 = v505:MakeTab({
     "PvP,Player", 
-    "user"
+    "rbxassetid://95855416434306"
 });
 local v530 = v505:MakeTab({
     "Shop", 
-    "shoppingCart"
+    "rbxassetid://95855416434306"
 });
 local v531 = v505:MakeTab({
     "Settings", 
     "settings"
 });
 local _ = v520:AddSection({
-    "Select Melee,Sword,Gun,Fruit"
+    "Select Melee..."
 });
 _G.SelectWeapon = "Melee";
 task.spawn(function() --[[ Line: 0 ]] --[[ Name:  ]]
@@ -3995,7 +3995,7 @@ local _ = v520:AddSection({
 });
 v520:AddToggle({
     Name = "Auto Farm Level", 
-    Description = "Only Level 1 -> Level 2650", 
+    Description = " Level 1 ->  2800", 
     Default = false, 
     Callback = function(v544) --[[ Line: 0 ]] --[[ Name:  ]]
         _G.AutoFarm = v544;
@@ -4191,7 +4191,7 @@ spawn(function() --[[ Line: 0 ]] --[[ Name:  ]]
 end);
 v520:AddToggle({
     Name = "Auto Kill Near | Mob Aura", 
-    Description = "\239\191\189\195\161nh Qu\195\161i G\225\186\167n", 
+    Description = "Đánh quái gần", 
     Default = false, 
     Callback = function(v555) --[[ Line: 0 ]] --[[ Name:  ]]
         _G.AutoNear = v555;
@@ -6819,7 +6819,7 @@ if World3 then
                                     if not l_Character_7:FindFirstChild("Tushita") and not l_Backpack_1:FindFirstChild("Tushita") then
                                         if not v823 then
                                             game.StarterGui:SetCore("SendNotification", {
-                                                Title = "Dum Hub", 
+                                                Title = "white hub", 
                                                 Text = "Use! - Yama or Tushita", 
                                                 con = "rbxassetid://80424431930361", 
                                                 Duration = 10
@@ -9389,7 +9389,7 @@ v529:AddButton({
 });
 v529:AddToggle({
     Title = "Auto Kill Player Quest", 
-    Description = "Bay \196\144\225\186\191n Ng\198\176\225\187\157i Ch\198\161i \196\144\198\176\225\187\163c Nh\225\186\173n Nhi\225\187\135m V\225\187\165", 
+    Description = "tự động giết người chơi được chọn", 
     Value = false, 
     Callback = function(v1157) --[[ Line: 0 ]] --[[ Name:  ]]
         _G.AutoPlayerHunter = v1157;
@@ -9484,7 +9484,7 @@ if l_LocalPlayer_16.Character then
     v1165(l_LocalPlayer_16.Character);
 end;
 v529:AddSlider({
-    Title = "Speed Ch\225\186\161y by Dum hub", 
+    Title = "Speed by white hub", 
     Min = 26, 
     Max = 300, 
     Default = getgenv().WalkSpeedValue, 
